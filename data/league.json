@@ -1,0 +1,47 @@
+{
+  "league": {
+    "name": "The Borough's League",
+    "established": 2006,
+    "commissioner": "Dave",
+    "pprSince": 2009,
+    "currentSeason": 2026,
+    "draftDate": "2026-09-08",
+    "managers": ["Dave", "Priya", "Rachel", "Tony", "Marcus", "Ken", "Nate", "Bri"]
+  },
+  "champions": [
+    { "year": 2006, "manager": "Dave" },
+    { "year": 2007, "manager": "Tony" },
+    { "year": 2008, "manager": "Marcus" },
+    { "year": 2009, "manager": "Dave" },
+    { "year": 2010, "manager": "Tony" },
+    { "year": 2011, "manager": "Marcus" },
+    { "year": 2012, "manager": "Ken" },
+    { "year": 2013, "manager": "Priya" },
+    { "year": 2014, "manager": "Dave" },
+    { "year": 2015, "manager": "Rachel" },
+    { "year": 2016, "manager": "Ken" },
+    { "year": 2017, "manager": "Priya" },
+    { "year": 2018, "manager": "Priya" },
+    { "year": 2019, "manager": "Marcus" },
+    { "year": 2020, "manager": "Nate" },
+    { "year": 2021, "manager": "Dave" },
+    { "year": 2022, "manager": "Rachel" },
+    { "year": 2023, "manager": "Bri" },
+    { "year": 2024, "manager": "Priya" },
+    { "year": 2025, "manager": "Rachel" }
+  ],
+  "allTimeStandings": [
+    { "rank": 1, "manager": "Priya", "wins": 137, "losses": 97 },
+    { "rank": 2, "manager": "Dave", "wins": 152, "losses": 108 },
+    { "rank": 3, "manager": "Rachel", "wins": 118, "losses": 90 }
+  ],
+  "records": {
+    "highestWeekEver": {
+      "manager": "Bri",
+      "score": 205.3,
+      "season": 2023,
+      "week": 6,
+      "note": "Broke Priya's eight-year-old mark by 3.7 and then missed the playoffs by one game."
+    }
+  }
+}
