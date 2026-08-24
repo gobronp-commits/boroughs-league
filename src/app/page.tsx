@@ -16,7 +16,7 @@ function formatPct(pct: number): string {
 export default function Home() {
   const league = getLeague();
   const champions = getChampions();
-  const standings = getAllTimeStandings();
+  const standings = getAllTimeStandings(5);
   const titleLeaders = getTitlesLeaders();
   const defending = getDefendingChampion();
 
@@ -66,11 +66,11 @@ export default function Home() {
             <span>W-L</span>
           </div>
           <div className="space-y-3">
-            {standings.map((row) => (
+            {standings.map((row, i) => (
               <div key={row.manager} className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <span className="text-xs text-[var(--ink)]/40 w-5">
-                    {String(row.rank).padStart(2, "0")}
+                    {String(i + 1).padStart(2, "0")}
                   </span>
                   <span className="font-bold">{row.manager}</span>
                 </div>

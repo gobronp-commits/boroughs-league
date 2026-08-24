@@ -1,5 +1,6 @@
-// A fixed maroon/gold/brick palette cycled across managers so each name
-// reads consistently wherever it appears (trophy wall, standings, etc).
+// A fixed maroon/gold/brick palette. Managers are hashed to a palette entry
+// so any name gets a consistent color everywhere without needing a
+// pre-built roster list (the roster changes year to year).
 const PALETTE: { bg: string; text: string }[] = [
   { bg: "var(--maroon)", text: "var(--paper)" },
   { bg: "var(--gold)", text: "var(--ink)" },
@@ -11,7 +12,14 @@ const PALETTE: { bg: string; text: string }[] = [
   { bg: "#3d1420", text: "var(--paper)" },
 ];
 
-export function managerColor(manager: string, managers: string[]) {
-  const index = managers.indexOf(manager);
-  return PALETTE[index >= 0 ? index % PALETTE.length : 0];
+function hashString(value: string): number {
+  let h = 0;
+  for (let i = 0; i < value.length; i++) {
+    h = (h * 31 + value.charCodeAt(i)) | 0;
+  }
+  return Math.abs(h);
+}
+
+export function managerColor(manager: string) {
+  return PALETTE[hashString(manager) % PALETTE.length];
 }

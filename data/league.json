@@ -5,35 +5,1229 @@
     "commissioner": "Dave",
     "pprSince": 2009,
     "currentSeason": 2026,
-    "draftDate": "2026-09-08",
-    "managers": ["Dave", "Priya", "Rachel", "Tony", "Marcus", "Ken", "Nate", "Bri"]
+    "draftDate": "2026-09-08"
   },
-  "champions": [
-    { "year": 2006, "manager": "Dave" },
-    { "year": 2007, "manager": "Tony" },
-    { "year": 2008, "manager": "Marcus" },
-    { "year": 2009, "manager": "Dave" },
-    { "year": 2010, "manager": "Tony" },
-    { "year": 2011, "manager": "Marcus" },
-    { "year": 2012, "manager": "Ken" },
-    { "year": 2013, "manager": "Priya" },
-    { "year": 2014, "manager": "Dave" },
-    { "year": 2015, "manager": "Rachel" },
-    { "year": 2016, "manager": "Ken" },
-    { "year": 2017, "manager": "Priya" },
-    { "year": 2018, "manager": "Priya" },
-    { "year": 2019, "manager": "Marcus" },
-    { "year": 2020, "manager": "Nate" },
-    { "year": 2021, "manager": "Dave" },
-    { "year": 2022, "manager": "Rachel" },
-    { "year": 2023, "manager": "Bri" },
-    { "year": 2024, "manager": "Priya" },
-    { "year": 2025, "manager": "Rachel" }
-  ],
-  "allTimeStandings": [
-    { "rank": 1, "manager": "Priya", "wins": 137, "losses": 97 },
-    { "rank": 2, "manager": "Dave", "wins": 152, "losses": 108 },
-    { "rank": 3, "manager": "Rachel", "wins": 118, "losses": 90 }
+  "seasons": [
+    {
+      "year": 2006,
+      "teamCount": 10,
+      "champion": "Dave",
+      "standings": [
+        {
+          "manager": "Dave",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Sam",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Alex",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Lee",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Morgan",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Riley",
+          "wins": 6,
+          "losses": 7
+        },
+        {
+          "manager": "Casey",
+          "wins": 5,
+          "losses": 8
+        },
+        {
+          "manager": "Marcus",
+          "wins": 4,
+          "losses": 9
+        },
+        {
+          "manager": "Jordan",
+          "wins": 3,
+          "losses": 10
+        },
+        {
+          "manager": "Tony",
+          "wins": 3,
+          "losses": 10
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "teamCount": 10,
+      "champion": "Tony",
+      "standings": [
+        {
+          "manager": "Tony",
+          "wins": 11,
+          "losses": 2
+        },
+        {
+          "manager": "Dave",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Lee",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Quinn",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Riley",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Casey",
+          "wins": 6,
+          "losses": 7
+        },
+        {
+          "manager": "Sam",
+          "wins": 6,
+          "losses": 7
+        },
+        {
+          "manager": "Jordan",
+          "wins": 3,
+          "losses": 10
+        },
+        {
+          "manager": "Marcus",
+          "wins": 3,
+          "losses": 10
+        },
+        {
+          "manager": "Morgan",
+          "wins": 3,
+          "losses": 10
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "teamCount": 10,
+      "champion": "Marcus",
+      "standings": [
+        {
+          "manager": "Marcus",
+          "wins": 11,
+          "losses": 2
+        },
+        {
+          "manager": "Casey",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Jordan",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Dave",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Drew",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Lee",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Tony",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Riley",
+          "wins": 4,
+          "losses": 9
+        },
+        {
+          "manager": "Morgan",
+          "wins": 3,
+          "losses": 10
+        },
+        {
+          "manager": "Quinn",
+          "wins": 3,
+          "losses": 10
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "teamCount": 10,
+      "champion": "Dave",
+      "standings": [
+        {
+          "manager": "Dave",
+          "wins": 12,
+          "losses": 1
+        },
+        {
+          "manager": "Ken",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Drew",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Quinn",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Casey",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Lee",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Morgan",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Riley",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Marcus",
+          "wins": 4,
+          "losses": 9
+        },
+        {
+          "manager": "Tony",
+          "wins": 4,
+          "losses": 9
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "teamCount": 10,
+      "champion": "Tony",
+      "standings": [
+        {
+          "manager": "Tony",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Ken",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Marcus",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Riley",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Drew",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Dave",
+          "wins": 5,
+          "losses": 8
+        },
+        {
+          "manager": "Morgan",
+          "wins": 5,
+          "losses": 8
+        },
+        {
+          "manager": "Quinn",
+          "wins": 5,
+          "losses": 8
+        },
+        {
+          "manager": "Lee",
+          "wins": 3,
+          "losses": 10
+        },
+        {
+          "manager": "Taylor",
+          "wins": 3,
+          "losses": 10
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "teamCount": 10,
+      "champion": "Marcus",
+      "standings": [
+        {
+          "manager": "Marcus",
+          "wins": 12,
+          "losses": 1
+        },
+        {
+          "manager": "Tony",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Dave",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Lee",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Priya",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Taylor",
+          "wins": 6,
+          "losses": 7
+        },
+        {
+          "manager": "Quinn",
+          "wins": 4,
+          "losses": 9
+        },
+        {
+          "manager": "Riley",
+          "wins": 4,
+          "losses": 9
+        },
+        {
+          "manager": "Drew",
+          "wins": 3,
+          "losses": 10
+        },
+        {
+          "manager": "Ken",
+          "wins": 3,
+          "losses": 10
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "teamCount": 10,
+      "champion": "Ken",
+      "standings": [
+        {
+          "manager": "Ken",
+          "wins": 12,
+          "losses": 1
+        },
+        {
+          "manager": "Riley",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Taylor",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Tony",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Dave",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Quinn",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Priya",
+          "wins": 6,
+          "losses": 7
+        },
+        {
+          "manager": "Drew",
+          "wins": 5,
+          "losses": 8
+        },
+        {
+          "manager": "Alex",
+          "wins": 4,
+          "losses": 9
+        },
+        {
+          "manager": "Marcus",
+          "wins": 3,
+          "losses": 10
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "teamCount": 12,
+      "champion": "Priya",
+      "standings": [
+        {
+          "manager": "Priya",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Rachel",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Jordan",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Sam",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Taylor",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Tony",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Ken",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Alex",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Marcus",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Dave",
+          "wins": 6,
+          "losses": 7
+        },
+        {
+          "manager": "Quinn",
+          "wins": 6,
+          "losses": 7
+        },
+        {
+          "manager": "Drew",
+          "wins": 5,
+          "losses": 8
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "teamCount": 12,
+      "champion": "Dave",
+      "standings": [
+        {
+          "manager": "Dave",
+          "wins": 12,
+          "losses": 1
+        },
+        {
+          "manager": "Ken",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Drew",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Rachel",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Priya",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Sam",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Morgan",
+          "wins": 6,
+          "losses": 7
+        },
+        {
+          "manager": "Alex",
+          "wins": 5,
+          "losses": 8
+        },
+        {
+          "manager": "Taylor",
+          "wins": 5,
+          "losses": 8
+        },
+        {
+          "manager": "Casey",
+          "wins": 3,
+          "losses": 10
+        },
+        {
+          "manager": "Jordan",
+          "wins": 3,
+          "losses": 10
+        },
+        {
+          "manager": "Marcus",
+          "wins": 3,
+          "losses": 10
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "teamCount": 12,
+      "champion": "Rachel",
+      "standings": [
+        {
+          "manager": "Rachel",
+          "wins": 12,
+          "losses": 1
+        },
+        {
+          "manager": "Marcus",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Ken",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Morgan",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Casey",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Priya",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Taylor",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Sam",
+          "wins": 6,
+          "losses": 7
+        },
+        {
+          "manager": "Dave",
+          "wins": 5,
+          "losses": 8
+        },
+        {
+          "manager": "Lee",
+          "wins": 5,
+          "losses": 8
+        },
+        {
+          "manager": "Alex",
+          "wins": 4,
+          "losses": 9
+        },
+        {
+          "manager": "Jordan",
+          "wins": 4,
+          "losses": 9
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "teamCount": 12,
+      "champion": "Ken",
+      "standings": [
+        {
+          "manager": "Ken",
+          "wins": 12,
+          "losses": 1
+        },
+        {
+          "manager": "Riley",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Alex",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Casey",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Lee",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Rachel",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Morgan",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Marcus",
+          "wins": 6,
+          "losses": 7
+        },
+        {
+          "manager": "Jordan",
+          "wins": 5,
+          "losses": 8
+        },
+        {
+          "manager": "Priya",
+          "wins": 5,
+          "losses": 8
+        },
+        {
+          "manager": "Dave",
+          "wins": 4,
+          "losses": 9
+        },
+        {
+          "manager": "Sam",
+          "wins": 3,
+          "losses": 10
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "teamCount": 12,
+      "champion": "Priya",
+      "standings": [
+        {
+          "manager": "Priya",
+          "wins": 12,
+          "losses": 1
+        },
+        {
+          "manager": "Casey",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Marcus",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Quinn",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Riley",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Sam",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Rachel",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Dave",
+          "wins": 6,
+          "losses": 7
+        },
+        {
+          "manager": "Ken",
+          "wins": 5,
+          "losses": 8
+        },
+        {
+          "manager": "Morgan",
+          "wins": 5,
+          "losses": 8
+        },
+        {
+          "manager": "Jordan",
+          "wins": 3,
+          "losses": 10
+        },
+        {
+          "manager": "Lee",
+          "wins": 3,
+          "losses": 10
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "teamCount": 12,
+      "champion": "Priya",
+      "standings": [
+        {
+          "manager": "Priya",
+          "wins": 11,
+          "losses": 2
+        },
+        {
+          "manager": "Casey",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Dave",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Jordan",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Morgan",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Riley",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Lee",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Nate",
+          "wins": 6,
+          "losses": 7
+        },
+        {
+          "manager": "Drew",
+          "wins": 5,
+          "losses": 8
+        },
+        {
+          "manager": "Quinn",
+          "wins": 5,
+          "losses": 8
+        },
+        {
+          "manager": "Rachel",
+          "wins": 5,
+          "losses": 8
+        },
+        {
+          "manager": "Marcus",
+          "wins": 4,
+          "losses": 9
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "teamCount": 12,
+      "champion": "Marcus",
+      "standings": [
+        {
+          "manager": "Marcus",
+          "wins": 12,
+          "losses": 1
+        },
+        {
+          "manager": "Morgan",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Nate",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Taylor",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Drew",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Priya",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Casey",
+          "wins": 6,
+          "losses": 7
+        },
+        {
+          "manager": "Dave",
+          "wins": 6,
+          "losses": 7
+        },
+        {
+          "manager": "Rachel",
+          "wins": 6,
+          "losses": 7
+        },
+        {
+          "manager": "Riley",
+          "wins": 6,
+          "losses": 7
+        },
+        {
+          "manager": "Lee",
+          "wins": 5,
+          "losses": 8
+        },
+        {
+          "manager": "Quinn",
+          "wins": 3,
+          "losses": 10
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "teamCount": 12,
+      "champion": "Nate",
+      "standings": [
+        {
+          "manager": "Nate",
+          "wins": 12,
+          "losses": 1
+        },
+        {
+          "manager": "Priya",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Morgan",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Alex",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Bri",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Rachel",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Riley",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Taylor",
+          "wins": 6,
+          "losses": 7
+        },
+        {
+          "manager": "Lee",
+          "wins": 5,
+          "losses": 8
+        },
+        {
+          "manager": "Dave",
+          "wins": 3,
+          "losses": 10
+        },
+        {
+          "manager": "Drew",
+          "wins": 3,
+          "losses": 10
+        },
+        {
+          "manager": "Quinn",
+          "wins": 3,
+          "losses": 10
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "teamCount": 10,
+      "champion": "Dave",
+      "standings": [
+        {
+          "manager": "Dave",
+          "wins": 11,
+          "losses": 2
+        },
+        {
+          "manager": "Bri",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Drew",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Nate",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Rachel",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Priya",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Quinn",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Lee",
+          "wins": 5,
+          "losses": 8
+        },
+        {
+          "manager": "Riley",
+          "wins": 5,
+          "losses": 8
+        },
+        {
+          "manager": "Taylor",
+          "wins": 5,
+          "losses": 8
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "teamCount": 10,
+      "champion": "Rachel",
+      "standings": [
+        {
+          "manager": "Rachel",
+          "wins": 11,
+          "losses": 2
+        },
+        {
+          "manager": "Taylor",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Alex",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Dave",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Priya",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Nate",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Riley",
+          "wins": 5,
+          "losses": 8
+        },
+        {
+          "manager": "Drew",
+          "wins": 4,
+          "losses": 9
+        },
+        {
+          "manager": "Quinn",
+          "wins": 4,
+          "losses": 9
+        },
+        {
+          "manager": "Bri",
+          "wins": 3,
+          "losses": 10
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "teamCount": 10,
+      "champion": "Bri",
+      "standings": [
+        {
+          "manager": "Alex",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Bri",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Dave",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Priya",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Sam",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Taylor",
+          "wins": 9,
+          "losses": 4
+        },
+        {
+          "manager": "Rachel",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Drew",
+          "wins": 6,
+          "losses": 7
+        },
+        {
+          "manager": "Nate",
+          "wins": 4,
+          "losses": 9
+        },
+        {
+          "manager": "Quinn",
+          "wins": 4,
+          "losses": 9
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "teamCount": 10,
+      "champion": "Priya",
+      "standings": [
+        {
+          "manager": "Priya",
+          "wins": 12,
+          "losses": 1
+        },
+        {
+          "manager": "Jordan",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Taylor",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Alex",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Bri",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Drew",
+          "wins": 6,
+          "losses": 7
+        },
+        {
+          "manager": "Sam",
+          "wins": 5,
+          "losses": 8
+        },
+        {
+          "manager": "Rachel",
+          "wins": 4,
+          "losses": 9
+        },
+        {
+          "manager": "Casey",
+          "wins": 3,
+          "losses": 10
+        },
+        {
+          "manager": "Dave",
+          "wins": 3,
+          "losses": 10
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "teamCount": 10,
+      "champion": "Rachel",
+      "standings": [
+        {
+          "manager": "Rachel",
+          "wins": 11,
+          "losses": 2
+        },
+        {
+          "manager": "Dave",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Morgan",
+          "wins": 10,
+          "losses": 3
+        },
+        {
+          "manager": "Alex",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Casey",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Taylor",
+          "wins": 8,
+          "losses": 5
+        },
+        {
+          "manager": "Jordan",
+          "wins": 7,
+          "losses": 6
+        },
+        {
+          "manager": "Sam",
+          "wins": 6,
+          "losses": 7
+        },
+        {
+          "manager": "Bri",
+          "wins": 5,
+          "losses": 8
+        },
+        {
+          "manager": "Priya",
+          "wins": 5,
+          "losses": 8
+        }
+      ]
+    }
   ],
   "records": {
     "highestWeekEver": {

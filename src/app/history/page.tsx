@@ -1,9 +1,8 @@
 import Link from "next/link";
-import { getLeague, getChampions, getTitleCounts } from "@/lib/league";
+import { getChampions, getTitleCounts } from "@/lib/league";
 import { managerColor } from "@/lib/colors";
 
 export default function HistoryPage() {
-  const league = getLeague();
   const champions = getChampions();
   const titleCounts = getTitleCounts();
 
@@ -27,7 +26,7 @@ export default function HistoryPage() {
 
         <div className="grid grid-cols-5">
           {champions.map((c) => {
-            const color = managerColor(c.manager, league.managers);
+            const color = managerColor(c.manager);
             return (
               <div
                 key={c.year}

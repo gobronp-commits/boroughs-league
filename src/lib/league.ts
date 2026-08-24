@@ -7,19 +7,19 @@ export type League = {
   pprSince: number;
   currentSeason: number;
   draftDate: string;
-  managers: string[];
 };
 
-export type Champion = {
-  year: number;
-  manager: string;
-};
-
-export type StandingRow = {
-  rank: number;
+export type SeasonStanding = {
   manager: string;
   wins: number;
   losses: number;
+};
+
+export type Season = {
+  year: number;
+  teamCount: number;
+  champion: string;
+  standings: SeasonStanding[];
 };
 
 export type HighestWeek = {
@@ -32,8 +32,7 @@ export type HighestWeek = {
 
 export type LeagueData = {
   league: League;
-  champions: Champion[];
-  allTimeStandings: StandingRow[];
+  seasons: Season[];
   records: {
     highestWeekEver: HighestWeek;
   };
@@ -45,16 +44,31 @@ export function getLeague(): League {
   return data.league;
 }
 
-export function getChampions(): Champion[] {
-  return data.champions;
+export function getSeasons(): Season[] {
+  return data.seasons;
 }
 
-export function getAllTimeStandings(): StandingRow[] {
-  return data.allTimeStandings;
+export function getSeason(year: number): Season | undefined {
+  return data.seasons.find((s) => s.year === year);
 }
 
 export function getHighestWeekEver(): HighestWeek {
   return data.records.highestWeekEver;
+}
+
+export type Champion = { year: number; manager: string };
+
+export function getChampions(): Champion[] {
+  return data.seasons.map((s) => ({ year: s.year, manager: s.champion }));
+}
+
+// Every manager who has ever fielded a team, in first-appearance order.
+export function getAllManagers(): string[] {
+  const seen = new Set<string>();
+  for (const season of data.seasons) {
+    for (const row of season.standings) seen.add(row.manager);
+  }
+  return [...seen];
 }
 
 export function winPct(wins: number, losses: number): number {
@@ -62,12 +76,38 @@ export function winPct(wins: number, losses: number): number {
   return total === 0 ? 0 : wins / total;
 }
 
+export type AllTimeRow = {
+  manager: string;
+  wins: number;
+  losses: number;
+  seasons: number;
+};
+
+// Aggregated only across the seasons each manager actually played - not
+// every manager has been in the league the whole 20 years.
+export function getAllTimeStandings(limit?: number): AllTimeRow[] {
+  const totals = new Map<string, { wins: number; losses: number; seasons: number }>();
+  for (const season of data.seasons) {
+    for (const row of season.standings) {
+      const entry = totals.get(row.manager) ?? { wins: 0, losses: 0, seasons: 0 };
+      entry.wins += row.wins;
+      entry.losses += row.losses;
+      entry.seasons += 1;
+      totals.set(row.manager, entry);
+    }
+  }
+  const rows = [...totals.entries()]
+    .map(([manager, t]) => ({ manager, ...t }))
+    .sort((a, b) => winPct(b.wins, b.losses) - winPct(a.wins, a.losses) || b.wins - a.wins);
+  return limit ? rows.slice(0, limit) : rows;
+}
+
 export type TitleCount = { manager: string; titles: number };
 
 export function getTitleCounts(): TitleCount[] {
   const counts = new Map<string, number>();
-  for (const c of data.champions) {
-    counts.set(c.manager, (counts.get(c.manager) ?? 0) + 1);
+  for (const s of data.seasons) {
+    counts.set(s.champion, (counts.get(s.champion) ?? 0) + 1);
   }
   return [...counts.entries()]
     .map(([manager, titles]) => ({ manager, titles }))
@@ -81,7 +121,8 @@ export function getTitlesLeaders(): TitleCount[] {
 }
 
 export function getDefendingChampion(): Champion | undefined {
-  return [...data.champions].sort((a, b) => b.year - a.year)[0];
+  const latest = [...data.seasons].sort((a, b) => b.year - a.year)[0];
+  return latest ? { year: latest.year, manager: latest.champion } : undefined;
 }
 
 export function formatDateShort(dateIso: string): string {
