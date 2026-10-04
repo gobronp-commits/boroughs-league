@@ -139,3 +139,13 @@ export function daysUntil(dateIso: string, from: Date = new Date()): number {
   const fromMidnight = new Date(from.getFullYear(), from.getMonth(), from.getDate());
   return Math.round((target.getTime() - fromMidnight.getTime()) / 86_400_000);
 }
+
+// NFL Week 1 kicks off on the first Thursday on or after the draft, and each
+// week runs Thursday to Wednesday. Returns 0 between the draft and kickoff.
+export function nflWeek(draftIso: string, from: Date = new Date()): number {
+  const [y, m, d] = draftIso.split("-").map(Number);
+  const draftDay = new Date(y, m - 1, d).getDay();
+  const kickoffOffset = (4 - draftDay + 7) % 7;
+  const sinceKickoff = -daysUntil(draftIso, from) - kickoffOffset;
+  return sinceKickoff < 0 ? 0 : Math.floor(sinceKickoff / 7) + 1;
+}
